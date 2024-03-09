@@ -67,5 +67,6 @@ function copyToClipboard(){
 
     alert("Copied to clipboard: " + inputBox.value)
 }
+// -_-
 // console.log(generate(10))
 // console.log(specialCharsCheck)
