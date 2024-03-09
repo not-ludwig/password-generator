@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator v1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; 
+        /* MIN HEIGHT -- Kinda hacky */
+
+    .flexContainer {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px
+    }
+
+    .sides {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bigInput {
+        font-size: 20px;
+    }
+
+    .bigBtn, .bigInput {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+}
+</style>
+<body>
+    <main>
+        <form action="">
+            <div class="flexContainer">
+                <input id="inputBox" class="bigInput" type="text" disabled>
+                <div class="sides">
+                    <label for="">Amount of characters <b>(default is 12)</b>: </label>
+                    <input type="text" id="passwordLengthInput">
+                </div>
+                <div class="sides">
+                    <label for="">Should contain <b>special chars</b>: </label>
+                    <input type="checkbox" name="" id="specialCheck">
+                </div>
+                <button onclick="setGenerated()" type="button" class="bigBtn">Generate</button>
+                <button onclick="copyToClipboard()" type="button" class="bigBtn">Copy to clipboard</button>
+            </div>    
+        </form>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
