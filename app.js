@@ -26,7 +26,6 @@ function generateSpecial(length){
     return result;
 }
 
-
 function setGenerated(){
     let len = passwordLengthInput.value
 
@@ -69,4 +68,4 @@ function copyToClipboard(){
     alert("Copied to clipboard: " + inputBox.value)
 }
 // console.log(generate(10))
-//console.log(specialCharsCheck)
+// console.log(specialCharsCheck)
