@@ -1,1 +1,1 @@
-![IMG](https://github.com/not-ludwig/password-generator/tree/main/screenshot/1.png)
+![img](https://github.com/not-ludwig/password-generator/blob/main/screenshot/1.png)
